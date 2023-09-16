@@ -28,4 +28,4 @@ for n in range(number):
     for i in range(length):
         password += random.choice(chars)
     print(password)
-
+print()
