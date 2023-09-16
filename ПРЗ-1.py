@@ -16,16 +16,16 @@ if password_length <= 0:
 random_password = generate_random_password(password_length)
 print("Случайный пароль:", random_password)
 
-#import random as r
-#
-#chars = '+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
-#number = input('количество паролей?'+ "\n")
-#length = input('длина пароля?'+ "\n")
-#number = int(number)
-#length = int(length)
-#for n in range(number):
-#    password =''
-#    for i in range(length):
-#        password += random.choice(chars)
-#    print(password)
+import random
+
+chars = '+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+number = input('количество паролей?'+ "\n")
+length = input('длина пароля?'+ "\n")
+number = int(number)
+length = int(length)
+for n in range(number):
+    password =''
+    for i in range(length):
+        password += random.choice(chars)
+    print(password)
 
